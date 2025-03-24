@@ -19,4 +19,4 @@ ffmpeg  -loglevel info -hide_banner -i %OVERLAY% -y ^
  -c:v qtrle ^
  %OUTDIR%\rgba.mov
 
-:: pause
+::pause
