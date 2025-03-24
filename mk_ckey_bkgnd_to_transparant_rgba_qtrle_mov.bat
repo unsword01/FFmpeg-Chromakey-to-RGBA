@@ -13,7 +13,7 @@ set "BLUE=b='b(X,Y)'"
 set "ALPHA=a='if(lte(r(X,Y),5)*gte(g(X,Y),250)*lte(b(X,Y),5),0,255)'"
 
 :: Invoke ffmpeg to create Quicktime Run Length Encoded output with Alpha Channel
-ffmpeg  -loglevel info -hide_banner -i %OVERLAY% -y ^
+ffmpeg -loglevel info -hide_banner -i %OVERLAY% -y ^
  -filter_complex "[0]format=rgba,geq=interpolation=nearest:%RED%:%GREEN%:%BLUE%:%ALPHA%[rgba]" ^
  -map 0:a -map [rgba] ^
  -c:v qtrle ^
