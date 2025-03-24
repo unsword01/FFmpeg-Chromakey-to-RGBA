@@ -1,7 +1,7 @@
 :: Batch File to convert video with Chromakey to RGBA wth transparent Alpha Channel
 
 :: Define Source and Output
-set "OVERLAY=D:\Images\Snipes\TEST_Nosey_Roku_Snipe_Jerry_Best.mov"
+set "OVERLAY=D:\Images\Snipes\TEST_Snipe.mov"
 set OUTDIR=D:\Temp\Output
 
 :: Define configs for each channel used in geq filter
